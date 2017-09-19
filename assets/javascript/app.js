@@ -30,7 +30,7 @@
         var search = $(this).attr("id");
         console.log(search);
         console.log("test");
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + search +"&api_key=accf662df87648059081f8612dc2f0a3&limit=10";
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + search +"&api_key=accf662df87648059081f8612dc2f0a3&limit=10";
         console.log(queryURL);
         $.ajax({
             url: queryURL,

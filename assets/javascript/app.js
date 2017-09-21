@@ -1,5 +1,5 @@
 
-    buttons = ["David Beckham", "Scholes", "Ryan Giggs", "Manchester United", "Cantona","Matrix","Departed","Inception","Bruce Lee","Django","Tsubasa","Trump","Obama"];
+    buttons = ["Tom Brady","Pogba","Ryan Gosling","Rachel Mcadams","David Beckham", "Scholes", "Ryan Giggs", "Manchester United", "Cantona","Matrix","Departed","Inception","Bruce Lee","Django","Tsubasa","Trump","Obama"];
 
     var showButton = function (name) {
         for (var i = 0; i < name.length; i++) {

@@ -31,7 +31,12 @@ button:hover,
 input[type="submit"]:hover {
     background: #334e4d;
 }
+.all_gifs > .test{
+    float: right;
+    display: inline-block;
+    margin:20px;
 
+}
 
 
 

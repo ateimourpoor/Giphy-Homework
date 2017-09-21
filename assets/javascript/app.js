@@ -1,5 +1,5 @@
 
-    buttons = ["beckham", "scholes", "giggs", "Manchester United", "cantona"];
+    buttons = ["David Beckham", "Scholes", "Ryan Giggs", "Manchester United", "Cantona","Matrix","Departed","Inception","Bruce Lee","Django","Tsubasa","Trump","Obama"];
 
     var showButton = function (name) {
         for (var i = 0; i < name.length; i++) {
@@ -26,7 +26,7 @@
     });
 
     $(".all-buttons").on("click",".btn",function () {
-        $("#all_gifs").empty();
+        $(".all_gifs").empty();
         var search = $(this).attr("id");
         console.log(search);
         console.log("test");
@@ -43,7 +43,7 @@
                 var gifVarMotion = responseVar[i]['images']['fixed_height']['url'];
                 var rateVar = responseVar[i]['rating'];
                 var gifDiv = $("<img class= 'the_gif' src='"+gifVarStill+"' still_gif='"+gifVarStill+"' motion_gif='"+gifVarMotion+"' state ='still'>")
-                $("#all_gifs").append($("<p>Rating: "+rateVar+"  </p>")).append(gifDiv);
+                $(".all_gifs").append($("<div class='test'>")).append($("<p>Rating: "+rateVar+"  </p>")).append(gifDiv);
                 console.log(rateVar);
                 console.log(gifVarStill);
             }
@@ -51,7 +51,7 @@
         })
     })
 
-    $("#all_gifs").on("click",".the_gif", function(){
+    $(".all_gifs").on("click",".the_gif", function(){
         var gifVarStill = $(this).attr("still_gif");
         var gifVarMotion = $(this).attr("motion_gif");
         var stateVar = $(this).attr("state");
